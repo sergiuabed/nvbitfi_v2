@@ -1,0 +1,11 @@
+0.8401880.7830990.477397
+0.7009760.08879550.990603
+Sums of C entries from device: 0
+0000
+something
+26.549226.350423.196
+flag is 1
+Matrix multiplication correct!
+Matrix A max: 0.999994
+Matrix B max: 0.999999
+Matrix C max: 0

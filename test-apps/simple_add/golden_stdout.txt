@@ -1,0 +1,4 @@
+Device 0 (NVIDIA GeForce GTX 1050) is being used
+memory: 3.9477 GB ECC off 5 SMs x1493000
+#CTAs=10, nreps=10, threads/CTA=1024
+global sum = 102400 

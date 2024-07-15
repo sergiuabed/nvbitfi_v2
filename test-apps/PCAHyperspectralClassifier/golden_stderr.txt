@@ -1,0 +1,1 @@
+Inference on the image:   0%|          | 0/198 [00:00<?, ?it/s]Inference on the image:   1%|          | 1/198 [00:00<01:56,  1.69it/s]Inference on the image:  52%|█████▏    | 103/198 [00:00<00:00, 199.30it/s]Inference on the image: 199it [00:00, 252.96it/s]                         

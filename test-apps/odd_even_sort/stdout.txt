@@ -1,0 +1,118 @@
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.5) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------
+0.0334699 0.329964 0.690636 0.422487 0.206265 0.250128 0.636559 0.863622 0.301656 0.0249239 
+I'm here
+inspecting OddEven_kernel(float*, int) - num instrs 36
+Instr 0 @ 0x8 (8) - MOV R1, c[0x0][0x20] ;
+extracted instType: MOV
+index of instType: 85
+Instr 1 @ 0x10 (16) - MOV R0, c[0x0][0x148] ;
+extracted instType: MOV
+index of instType: 85
+Instr 2 @ 0x18 (24) - S2R R5, SR_TID.X         }
+extracted instType: S2R
+index of instType: 221
+Instr 3 @ 0x28 (40) - MOV32I R4, 0x1 ;
+extracted instType: MOV32I
+index of instType: 86
+Instr 4 @ 0x30 (48) - IADD32I R0, R0, -0x1 ;
+extracted instType: IADD32I
+index of instType: 43
+Instr 5 @ 0x38 (56) - SHL R5, R5, 0x1 ;
+extracted instType: SHL
+index of instType: 65
+Instr 6 @ 0x48 (72) - MOV R6, RZ ;
+extracted instType: MOV
+index of instType: 85
+Instr 7 @ 0x50 (80) - ISETP.GE.AND P0, PT, R6, R0, PT ;
+extracted instType: ISETP
+index of instType: 58
+Instr 8 @ 0x58 (88) - NOP ;
+extracted instType: NOP
+index of instType: 218
+Instr 9 @ 0x68 (104) - @P0 EXIT ;
+extracted instType: EXIT
+index of instType: 187
+Instr 10 @ 0x70 (112) - SHR R3, R6.reuse, 0x1e ;
+extracted instType: SHR
+index of instType: 66
+Instr 11 @ 0x78 (120) - ISCADD R2.CC, R6, c[0x0][0x140], 0x2 ;
+extracted instType: ISCADD
+index of instType: 55
+Instr 12 @ 0x88 (136) - IADD.X R3, R3, c[0x0][0x144] ;
+extracted instType: IADD
+index of instType: 41
+Instr 13 @ 0x90 (144) - LDG.E R7, [R2+0x4] ;
+extracted instType: LDG
+index of instType: 101
+Instr 14 @ 0x98 (152) - LDG.E R8, [R2] ;
+extracted instType: LDG
+index of instType: 101
+Instr 15 @ 0xa8 (168) - IADD32I R6, R6, 0x1 ;
+extracted instType: IADD32I
+index of instType: 43
+Instr 16 @ 0xb0 (176) - FSETP.GT.AND P0, PT, R8, R7, PT ;
+extracted instType: FSETP
+index of instType: 11
+Instr 17 @ 0xb8 (184) - @!P0 BRA 0x50 ;
+extracted instType: BRA
+index of instType: 177
+Instr 18 @ 0xc8 (200) - ISETP.GE.AND P0, PT, R5, R0, PT ;
+extracted instType: ISETP
+index of instType: 58
+Instr 19 @ 0xd0 (208) - SSY 0x140         }
+extracted instType: SSY
+index of instType: 207
+Instr 20 @ 0xd8 (216) - @P0 SYNC ;
+extracted instType: SYNC
+index of instType: 208
+Instr 21 @ 0xe8 (232) - SHR R3, R5.reuse, 0x1e ;
+extracted instType: SHR
+index of instType: 66
+Instr 22 @ 0xf0 (240) - ISCADD R2.CC, R5, c[0x0][0x140], 0x2 ;
+extracted instType: ISCADD
+index of instType: 55
+Instr 23 @ 0xf8 (248) - IADD.X R3, R3, c[0x0][0x144] ;
+extracted instType: IADD
+index of instType: 41
+Instr 24 @ 0x108 (264) - LDG.E R7, [R2+0x4] ;
+extracted instType: LDG
+index of instType: 101
+Instr 25 @ 0x110 (272) - LDG.E R8, [R2] ;
+extracted instType: LDG
+index of instType: 101
+Instr 26 @ 0x118 (280) - FSETP.GT.AND P0, PT, R8, R7, PT ;
+extracted instType: FSETP
+index of instType: 11
+Instr 27 @ 0x128 (296) - @P0 STG.E [R2], R7 ;
+extracted instType: STG
+index of instType: 109
+Instr 28 @ 0x130 (304) - @P0 STG.E [R2+0x4], R8 ;
+extracted instType: STG
+index of instType: 109
+Instr 29 @ 0x138 (312) - SYNC ;
+extracted instType: SYNC
+index of instType: 208
+Instr 30 @ 0x148 (328) - IADD R5, R4, R5 ;
+extracted instType: IADD
+index of instType: 41
+Instr 31 @ 0x150 (336) - BAR.SYNC 0x0         }
+extracted instType: BAR
+index of instType: 212
+Instr 32 @ 0x158 (344) - MEMBAR.CTA ;
+extracted instType: MEMBAR
+index of instType: 122
+Instr 33 @ 0x168 (360) - IADD R4, -R4, RZ ;
+extracted instType: IADD
+index of instType: 41
+Instr 34 @ 0x170 (368) - BRA 0x40         }
+extracted instType: BRA
+index of instType: 177
+Instr 35 @ 0x178 (376) - BRA 0x178 ;
+extracted instType: BRA
+index of instType: 177
+I'm out
+0.0249239 0.0334699 0.206265 0.250128 0.301656 0.329964 0.422487 0.636559 0.690636 0.863622 
