@@ -71,7 +71,7 @@ NUM_INJECTIONS = 1000
 #THRESHOLD_JOBS = 1000
 # THRESHOLD_JOBS = 1
 # THRESHOLD_JOBS = 25
-THRESHOLD_JOBS = 10#200#1000
+THRESHOLD_JOBS = 200#1000
 
 # THRESHOLD_JOBS sould be <= NUM_INJECTIONS
 assert THRESHOLD_JOBS <= NUM_INJECTIONS
@@ -315,7 +315,7 @@ apps = {
 			NVBITFI_HOME + '/test-apps/PCAHyperspectralClassifier', # workload directory
 			'pca.so', # binary name
 			NVBITFI_HOME + '/test-apps/PCAHyperspectralClassifier/', # path to the binary file
-			6, # expected runtime
+			20, # expected runtime
 			"" # additional parameters to the run.sh
 		],
 }

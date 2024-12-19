@@ -63,3 +63,6 @@ diff -B -w stdout_clear.txt golden_stdout_clear.txt > stdout_diff.log
 cat diff.log > special_check.log
 cat stderr_diff.log >> special_check.log
 cat stdout_diff.log >> special_check.log
+
+# Delete Datasets
+rm -r ./Datasets

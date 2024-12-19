@@ -16,7 +16,7 @@ from tqdm import tqdm
 import requests
 import urllib3
 import ssl
-
+import shutil
 
 class CustomHttpAdapter (requests.adapters.HTTPAdapter):
     # "Transport adapter" that allows us to use custom ssl_context.
@@ -145,16 +145,19 @@ def get_dataset(dataset_name, target_folder="./", datasets=DATASETS_CONFIG):
             # download the files
             filename = url.split("/")[-1]
             if not os.path.exists(folder + filename):
-                with TqdmUpTo(
-                    unit="B",
-                    unit_scale=True,
-                    miniters=1,
-                    desc="Downloading {}".format(filename),
-                ) as t:
-                    #urlretrieve(url, filename=folder + filename, reporthook=t.update_to)
-                    r = get_legacy_session().get(url)
-                    with open(folder + filename, 'wb') as f:
-                        f.write(r.content)
+                if os.path.exists('/home/sergiu/politoCourses/thesis/nvbitfi_logs_pcahyperspectral/Datasets/'+dataset_name+'/'+filename):
+                    shutil.copy('/home/sergiu/politoCourses/thesis/nvbitfi_logs_pcahyperspectral/Datasets/'+dataset_name+'/'+filename, folder)
+                else:
+                    with TqdmUpTo(
+                        unit="B",
+                        unit_scale=True,
+                        miniters=1,
+                        desc="Downloading {}".format(filename),
+                    ) as t:
+                        #urlretrieve(url, filename=folder + filename, reporthook=t.update_to)
+                        r = get_legacy_session().get(url)
+                        with open(folder + filename, 'wb') as f:
+                            f.write(r.content)
     elif not os.path.isdir(folder):
         print("WARNING: {} is not downloadable.".format(dataset_name))
 

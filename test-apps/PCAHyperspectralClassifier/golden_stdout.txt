@@ -1,12 +1,12 @@
 
 Computation on CUDA GPU device 0
-Dataset: IndianPines
+Dataset: PaviaU
 PCA: 10
 PCA Time:
-00:00:00.78
+00:00:01.25
 Inference Time: 
-00:00:00.79
+00:00:02.37
 Total Time: 
-00:00:01.92
+00:00:03.20
 
-Time for GS-PCA in CUBLAS: 0.216593 seconds
+Time for GS-PCA in CUBLAS: 0.907560 seconds
