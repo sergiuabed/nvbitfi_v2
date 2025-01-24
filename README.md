@@ -4,7 +4,13 @@ This repository contains the code for conducting the analysis presented in the p
 
 The HSI classifier tested in this work is [PCAHyperspectralClassifier](https://github.com/gigernau/PCAHyperspectralClassifier/tree/main).
 
-The fault injection tool used is [NVBitFI](https://github.com/NVlabs/nvbitfi). Refer to [this]() (LINK TO WEBTHESIS PENDING) document for a detailed explanation for setting up NVBitFI to perform transient fault injections on the HSI classifier.
+The fault injection tool used is [NVBitFI](https://github.com/NVlabs/nvbitfi). Refer to Chapter 4 of [this](https://webthesis.biblio.polito.it/33880/) document for a detailed explanation for setting up NVBitFI to simulate transient fault injections on the HSI classifier.
+
+The logs obtained during the experiments can be found at the following Zenodo repository:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14563028.svg)](https://doi.org/10.5281/zenodo.14563028)
+
+Check the description on Zenodo to find the link to the complete results.
 
 ## Packages needed for running the jupyter notebooks
 
